@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-grid {
+    width: 100vw;
+    /*La unidad de medida view width o height sirve para adaparse al dispositivo*/
+    height: 100vh;
+    border: 2px solid black;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "seis seis tres uno"
+        ". dos tres ." /*Solamente puede ser cuadrado, ejemplo en cinco se rompe*/
+        "cuatro dos cinco cinco";
+    /*grid-template-rows: repeat(20, 1fr); La fracción divide en parte equitativa la división acorde a sus medidas
+    grid-template-columns: repeat(20, 1fr);*/
+
+}
+
+.contenedor-grid div {
+    border: 2px solid black;
+    font-size: 50px;
+}
+
+.elemento-1 {
+    grid-area: uno;
+    background: yellow;
+    /*grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 6;*/
+}
+
+.elemento-2 {
+    grid-area: dos;
+    background: pink;
+    /*grid-column-start: 11;
+    grid-row-start: 1;
+    grid-row-end: 12;*/
+}
+
+.elemento-3 {
+    grid-area: tres;
+    background: red;
+}
+
+.elemento-4 {
+    grid-area: cuatro;
+    background: blue;
+}
+
+.elemento-5 {
+    grid-area: cinco;
+    background: orange;
+}
+
+.elemento-6 {
+    grid-area: seis;
+    background: green;
+    /*grid-column-start: 1;
+    grid-column-end: 21;
+    grid-row-start: 20;*/
+}
+
+@media (max-width: 400px) {
+    .contenedor-grid{
+    grid-template-areas:
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco"
+        "seis";
+    }
+}

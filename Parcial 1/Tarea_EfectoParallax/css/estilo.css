@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-grid {
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "uno uno dos "
+        "tres cuatro cinco";
+}
+
+.contenedor-grid div {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.elemento-1 {
+    grid-area: uno;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fondo, #arboles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.elemento-1 img,
+.elemento-3 img,
+.elemento-5 img {
+    position: absolute;
+    width: 10%;
+    bottom: 0;
+}
+
+#perrito {
+    width: 20%;
+    bottom: 0;
+    right: 20%;
+    transition: all 0.5s ease-in-out;
+}
+
+.elemento-2 {
+    grid-area: dos;
+}
+
+.elemento-3 {
+    grid-area: tres;
+}
+
+.elemento-4 {
+    grid-area: cuatro;
+    background-color: lavender;
+}
+
+.elemento-5 {
+    grid-area: cinco;
+}
+
+@media (max-width: 450px) {
+    .contenedor-grid {
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco";
+    }
+}

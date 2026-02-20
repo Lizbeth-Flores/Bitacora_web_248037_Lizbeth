@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #FADAD9;
+}
+
+.contenido {
+    border: 3px solid white; 
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+}
+

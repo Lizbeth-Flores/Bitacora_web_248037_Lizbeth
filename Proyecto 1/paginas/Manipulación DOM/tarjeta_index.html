@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Manipulacion DOM</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="menu_Navegacion" class="menu_Navegacion">
+        <ul>
+            <li>Inicio</li>
+            <li>Parcial 1</li>
+            <li>Parcial 2</li>
+            <li>Parcial 3</li>
+        </ul>
+    </nav>
+    <div id="contenido">
+        <div id="tarjeta" class="tarjeta">
+            <img src="recursos/head.jpg" id="imagen" class="imagen_cuphead">
+            <h2 id="titulo" class="titulo">Cuphead</h2>
+            <p id="texto">Cuphead es un juego de acción clásico estilo "dispara y corre" que se centra en combates
+                contra el jefe.
+                Inspirado en los dibujos animados de los años 30, los aspectos visual y sonoro están diseñados con
+                esmero empleando las mismas técnicas de la época.</p>
+        </div>
+
+    </div>
+    <button id="boton">></button>
+</body>
+<script>
+    //declarar variables en JS
+    //variable let
+    //constante const
+    const boton = document.getElementById("boton")
+    const contenido = document.getElementById("contenido");
+
+    boton.addEventListener('click', () => {
+
+        const imagen = document.getElementById("imagen");
+        const titulo = document.getElementById("titulo");
+        const texto = document.getElementById("texto");
+        const tarjeta = document.getElementById("tarjeta");
+
+        imagen.src = "recursos/head.jpg";
+        titulo.style.fontSize = "60px";
+        texto.textContent = "Esta es otra imagen";
+        contenido.style.margin
+        //document.body.style.background = "red";
+        //contenido.innerHTML = '<img src="recursos/cuphead.avif">';
+
+        //contenido.style.background = blanco;
+        //const texto = document.createElement('h1');
+        //texto.textContent = "Cuphead";
+
+        //contenido.appendChild(texto);
+    });
+
+    console.log(boton);
+</script>
+
+</html>
