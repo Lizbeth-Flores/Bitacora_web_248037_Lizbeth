@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Esto es para utilizar una fuente personalizada*/
+@font-face {
+    font-family: "nasa";
+    src: url(../recursos/fuente/Nasalization\ Rg.woff2) format(woff2);
+    font-weight: 30;
+    font-style: normal;
+}
+
+/* Es el estilo general de la página */
+body {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contiene a ambos formularios y les da el estilo*/
+.formularioEstilo {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Es el estilo del titulo de ambos formularios  */
+h1 {
+    font-family: "nasa";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Da estilo a las letras que estan dentro */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botones de los formularios */
+button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Cada botón importante tiene un color caracteristico: Botón iniciar */
+.botonIniciar {
+    font-family: "nasa";
+    background-color: #0b3d91;
+    color: white;
+}
+
+/*Y este es el otro botón: Botón registrar */
+.botonRegistro {
+    font-family: "nasa";
+    background-color: #273959;
+    color: white;
+}
+
+/* Ocultar el formulario de registro al inicio */
+#formRegistro {
+    display: none;
+}

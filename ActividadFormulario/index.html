@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad-Formularios dinámicos</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!--Este primer contenedor div es para darle estilo a los formularios-->
+    <div class="formularioEstilo">
+        <!--Este es el primer formulario que se muestra y es para el inicio de la sesión-->
+        <form id="formInicio">
+            <h1>Inicio de sesión</h1>
+            <label for="correo">Correo: </label>
+            <input type="email" name="correo" placeholder="Correo" required>
+            <br>
+            <label for="contraseña">Contraseña: </label>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+            <br>
+            <!--Aquí hay dos botones que estan conectados al JS y son funciones que ayudan al formulario dinámico-->
+            <P>¿No tienes una cuenta?</P>
+            <!--Este primer botón es para la función irRegistro y hace que aparezca el segundo formulario por medio del JS-->
+            <button id="botonRegistro" class="botonRegistro" type="button" onclick="irRegistro()"> Registrar </button>
+            <br>
+            <!--El segundo botón en ca,bio te lleva a la segunda página en donde se encuentra la tarjeta con la petición Fecth-->
+            <button id="botonIniciar" class="botonIniciar" type="button" onclick="leerDatos()">Iniciar</button>
+        </form>
+
+        <!--Este es el segundo formulario que se muestra y es para el formulario, se mantiene oculto con un display: none mientras el primero esta en uso-->
+        <form id="formRegistro">
+            <h1>Registro</h1>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <br>
+            <label for="correoRegistro">Correo: </label>
+            <input type="email" name="correoRegistro" placeholder="Correo" required>
+            <br>
+            <label for="contraseñaRegistro">Contraseña: </label>
+            <input type="password" name="contraseñaRegistro" placeholder="Contraseña" required>
+            <br>
+            <label for="contraseñaConfirmar">Confirmar contraseña: </label>
+            <input type="password" name="contraseñaConfirmar" placeholder="Contraseña" required>
+            <br>
+            <!--Este botón tiene una función que esta conectado al Localstorage y ayuda a almacenar la información del usaurio unna vez ya ha haya escrito todo. 
+            También te lleva al formuario de Inició de sesión.-->
+            <button type="button" onclick="registrarUsuario()">Registrar</button>
+            <br>
+        </form>
+    </div>
+
+
+</body>
+<script src="js/script.js"></script>
+
+</html>

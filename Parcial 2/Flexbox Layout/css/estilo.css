@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: "Lexend";
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #FE723B;
+}
+
+nav {
+    background-color: #FEC546;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+
+    order: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    background-color: #5C92D7;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: center;
+
+    order: 1;
+    flex-grow: 2;
+
+    background-color: #CCE5C6;
+}
+
+.aside {
+    display: flex;
+    justify-content: center;
+
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    background-color: #FE723B;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #FD7C95;
+}

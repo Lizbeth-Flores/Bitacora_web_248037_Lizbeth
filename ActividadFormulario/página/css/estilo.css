@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Esto es para utilizar una fuente personalizada*/
+@font-face {
+    font-family: "nasa";
+    src: url(../../recursos/fuente/Nasalization\ Rg.woff2) format(woff2);
+    font-weight: 30;
+    font-style: normal;
+}
+
+/*Este es el estilo general de la página que es el mismo que en el anterior*/
+body {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Le da forma al logotipo porque la imagen estaba gigante */
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+/* Para el titulo de la página */
+h1 {
+    font-family: "nasa";
+    margin-bottom: 20px;
+    color: #0b3d91;
+}
+
+/* Para el estilo de la tarjeta en donde va la información del fecth*/
+.tarjeta {
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+/* estilo de la imágen de la tarjera */
+.tarjeta img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* y para el estilo del titulo de la tarjeta */
+.tarjeta h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilo para el footer*/
+footer {
+    margin-top: 20px;
+}
+
+/* y para el botón que esta dentro de él */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0b3d91;
+    color: white;
+}
