@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #EDF7F8;
+    width: auto;
+}
+
+.menu_Navegacion {
+    width: 100%;
+    height: 8vh;
+    background-color: #8BABBC;
+}
+
+.menu_Navegacion ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 2vh;
+}
+
+.menu_Navegacion li {
+    font-size: 25px;
+    color: #FAFAFA;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+header{
+    display:flex; 
+    background-color: #242D36;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.titulo_principio h1{
+    font-family: "Pacifico";
+}
+
+header > ul{
+    font-family: "Baloo 2" sans-serif;
+    color: #fafafa;
+    list-style: none;
+}
+
+header > p {
+    text-align: right;
+}
+
+main {
+    color: #242D36;
+    padding: 15px;
+}
+
+
+main > h2 
+{
+    font-family:"Pacifico";
+}
+
+main > ul
+{
+    font-family:"Baloo 2" sans-serif;
+}
+
+footer{
+    background-color: #8babbc;
+}
+
+footer > p {
+    color:#FAFAFA; 
+    padding: 15px;
+    font-family: "Pacifico";
+}

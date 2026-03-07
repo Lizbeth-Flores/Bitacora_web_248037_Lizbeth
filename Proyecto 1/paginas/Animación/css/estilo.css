@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.menu_Navegacion {
+    width: 100%;
+    height: 8vh;
+    background-color: #8BABBC;
+}
+
+.menu_Navegacion ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 2vh;
+}
+
+.menu_Navegacion li {
+    font-size: 25px;
+    color: #FAFAFA;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 2vh;
+}
+
+li {
+    font-size: 3vh;
+    color: #FAFAFA;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "tarjeta formulario";
+}
+
+.tarjeta {
+    width: 550px;
+    background-color: #FAFAFA;
+    border: 4px solid #242D36;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.imagen {
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'Pacifico';
+    font-size: 36px;
+    color: #242D36;
+    margin: 15px 0;
+}
+
+.texto {
+    font-size: 16px;
+    color: #1D1D1B;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+button {
+    padding: 5px;
+    background: #8BABBC;
+    border: 2px solid #242D36;
+    color: #fafafa;
+    font-size: 24px;
+}
+
+.formulario {
+    width: 550px;
+    background-color: #FAFAFA;
+    border: 4px solid #242D36;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #776C71;
+    border-radius: 4px;
+}
+
+.tarjeta,
+.formulario {
+    transition: all 1.5s ease;
+}

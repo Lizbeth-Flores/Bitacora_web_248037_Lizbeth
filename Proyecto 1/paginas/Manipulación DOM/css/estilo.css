@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'Baloo 2', sans-serif;
+  color: #1D1D1B;
+}
+
+.menu_Navegacion {
+    width: 100%;
+    height: 8vh;
+    background-color: #8BABBC;
+}
+
+.menu_Navegacion ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 2vh;
+}
+
+.menu_Navegacion li {
+    font-size: 25px;
+    color: #FAFAFA;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+.tarjeta {
+  width: 300px;
+  background-color: #FAFAFA;
+  border: 4px solid #242D36;
+  border-radius: 12px;
+  box-shadow: rgba(0,0,0,0.2);
+  padding: 20px;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.imagen_cuphead {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.titulo {
+  font-family: 'Pacifico';
+  font-size: 36px;
+  color: #242D36;
+  margin: 15px 0;
+}
+
+#texto {
+  font-size: 16px;
+  color: #1D1D1B;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #8BABBC;
+  border: none;
+  color: #fafafa;
+  font-size: 24px;
+}
+
+button:hover {
+  background: #242D36;
+}

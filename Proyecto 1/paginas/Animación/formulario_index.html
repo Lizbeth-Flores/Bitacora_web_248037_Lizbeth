@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="menu_Navegacion" class="menu_Navegacion">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li>Parcial 1</li>
+            <li>Parcial 2</li>
+            <li>Parcial 3</li>
+        </ul>
+    </nav>
+    <div class="grid" id="grid">
+        <div id="tarjeta" class="tarjeta">
+            <img src="recursos/imagen.png">
+            <h2 id="titulo" class="titulo">El diablo</h2>
+            <p id="texto" class="texto">
+                El Diablo es el principal antagonista y jefe final de Cuphead, así como el antagonista general de su
+                DLC,
+                The Delicious Last Course. Como el gobernante de la región subterránea de Inkwell Hell, reside dentro
+                del
+                colosal y castillo que ocupa la mayor parte de su paisaje.
+
+                El Diablo se encuentra en su sala del trono dentro del casino, después de lo cual se lucha en la etapa
+                final
+                One Hell Of A Time. Tras su derrota, la narrativa del juego concluye.
+            </p>
+            <br>
+            <button id="boton" class="boton">Transformar</button>
+        </div>
+        <div id="formulario" class="formulario">
+            <form>
+                <label> Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+                <label for="comentario">¿Qué opinas sobre este villano?<br>Deja tu opinión aquí:</label>
+                <textarea id="comentario" name="mensaje" rows="4" placeholder="Escribe comentario..."
+                    required></textarea>
+
+                <button id="boton2" class="boton">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>

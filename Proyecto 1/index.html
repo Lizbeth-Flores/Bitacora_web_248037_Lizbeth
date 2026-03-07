@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora</title>
+    <link rel="stylesheet" href="css/estilo_general.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Este es el menú de navegación de la página y se reutilizó para las otras páginas web-->
+    <nav id="menu_Navegacion" class="menu_Navegacion">
+        <ul>
+            <li><a href="#">Inicio</a></li> <!--Este es el único link para volver a la página principal porque aún no existen los demás parciales-->
+            <li>Parcial 1</li>
+            <li>Parcial 2</li>
+            <li>Parcial 3</li>
+        </ul>
+    </nav>
+    <!--Aquí empieza el contenido de la página, que esta divida por un Grid para que tenga una mejor organización-->
+    <main>
+        <div id="contenedor_Grid" class="contenedor_Grid">
+            <!--En la cabecera se encuentran ambos efectos Parallax, en las imagénes el efecto esta aplicado desde JS y en el texto con CSS3-->
+            <header id="cabecera" class="cabecera">
+                <img src="recursos/img/fondo.png" alt="" id="fondo">
+                <img src="recursos/img/montañas.png" alt="" id="montañas">
+                <h1 class="bienvenida" id="bienvenida">Bitácora</h1>
+            </header>
+            <div class="division_Parcial1">
+                <h1>Parcial 1</h1>
+            </div>
+            <!--Estos son los botones para poder acceder a las otras páginas web usando la etiqueta <a> -->
+            <div id="link_Carta_Presentacion" class="link_Carta_Presentacion">
+                <img src="recursos/img/1.jpg">
+                <h2>Carta de presentación</h2>
+                <a href="paginas/Presentación/index.html">
+                    <button>➤</button>
+                </a>
+            </div>
+            <div id="link_Animacion" class="link_Animacion">
+                <img src="recursos/img/2.jpg">
+                <h2>Animación</h2>
+                 <a href="paginas/Animación/formulario_index.html">
+                    <button>➤</button>
+                </a>
+            </div>
+            <div id="link_DOM" class="link_DOM">
+                <img src="recursos/img/3.jpg">
+                <h2>Manipulación DOM</h2>
+                 <a href="paginas/Manipulación DOM/tarjeta_index.html">
+                    <button>➤</button>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/script_general.js"></script>
+
+</html>

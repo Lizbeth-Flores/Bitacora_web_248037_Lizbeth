@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor_grid {
+    display: grid;
+    grid-template-areas:
+        "logo buscar idiomas social"
+        "menu menu menu menu"
+        "imagen video crowdfunding crowdfunding"
+        "world noticia1 noticia2 noticia3"
+        "patrocinadores patrocinadores patrocinadores patrocinadores";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 300px auto auto;
+    gap: 10px;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.contenedor_grid>* {
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedor_grid img,
+.contenedor_grid video,
+.contenedor_grid iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+    grid-area: logo;
+    background: black;
+}
+
+.buscar {
+    grid-area: buscar;
+    background: black;
+}
+
+.idiomas {
+    grid-area: idiomas;
+    background: black;
+}
+
+.idiomas p{
+    color: white;
+}
+
+.redeSociales {
+    grid-area: social;
+    background: black;
+}
+
+.redeSociales p{
+    color: white;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.menu table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.imagen {
+    grid-area: imagen;
+}
+
+.video {
+    grid-area: video;
+}
+
+.crowdfunding {
+    grid-area: crowdfunding;
+}
+
+.world {
+    grid-area: world;
+}
+
+.noticia1 {
+    grid-area: noticia1;
+}
+
+.noticia2 {
+    grid-area: noticia2;
+}
+
+.noticia3 {
+    grid-area: noticia3;
+}
+
+.patrocinadores {
+    grid-area: patrocinadores;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+}
