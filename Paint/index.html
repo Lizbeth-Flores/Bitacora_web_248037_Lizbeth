@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <h1>Paint</h1>
+    <canvas id="lienzo" class="lienzo" width="600" height="400"></canvas>
+    <div>
+        <button id="btn_pincel">Pincel</button>
+        <button id="btn_linea">Línea</button>
+
+        <button id="btn_cuadro">Cuadro</button>
+        <button id="btn_circulo">Circulo</button>
+        <button id="btn_rombo">Rombo</button>
+        <button id="btn_sticker">Sticker</button>
+        <button id="btn_borrador">Borrador</button>
+
+        <div>
+            <input type="file" name="" id="archivo">
+        </div>
+
+        <input id="colorLinea" type="color">
+        <input id="colorRelleno" type="color">
+        <input id="grozor" type="range" name="" id="">
+        <input id="lineasActivas" type="radio" name="" id="">
+        <input id="noLineasActivas" type="radio">
+
+        <button id="blancoNegro">Blanco y negro</button>
+        <button id="rojos">Escala rojos</button>
+        <button id="verdes">Escala verdes</button>
+        <button id="azul">Escala azul</button>
+        <Button id="sepia">Sepia</Button>
+
+        <button id="btnlimpiar">Limpiar</button>
+        <button id="btnguardar">Guardar</button>
+        <button id="btndeshacer">Deshacer</button>
+        <button id="btnrehacer">Rehacer</button>
+    </div>
+    <!--El diseño también tiene que funcionar en móvil-->
+</body>
+<script type="module" src="scripts/canvas.js"></script>
+<script type="module" src="scripts/touch.js"></script>
+
+</html>

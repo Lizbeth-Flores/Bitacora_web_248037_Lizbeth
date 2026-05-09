@@ -1,0 +1,110 @@
+@import url("./configuraciones.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "texto";
+    background: url("../recursos/fondo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaciado);
+    padding: var(--espaciado);
+}
+
+h1 {
+    font-family: "titulo";
+    font-size: var(--titulo);
+    color: var(--color-azul-fuerte);
+    text-shadow: 2px 2px 0 var(--color-turquesa);
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-bottom: var(--espaciado);
+}
+
+#lienzo {
+    background: var(--color-crema);
+    border: 3px solid var(--color-negro);
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 95%;
+    margin-bottom: var(--espaciado);
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--espaciado);
+    width: 90%;
+    max-width: 1000px;
+    padding: var(--espaciado);
+    background: var(--color-crema);
+    border: 3px solid var(--color-negro);
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra);
+}
+
+button {
+    flex: 1 1 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: var(--color-turquesa);
+    color: var(--color-crema);
+    border: 2px solid var(--color-negro);
+    border-radius: var(--borde-redondeado);
+    cursor: pointer;
+    box-shadow: var(--sombra);
+}
+
+button:hover {
+    background: var(--color-naranja);
+}
+
+input[type="color"] {
+    width: 50px;              
+    height: 50px;             
+    border: 3px solid var(--color-negro);
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra);
+    background: var(--color-crema);
+    padding: 0;               
+}
+
+input[type="range"],
+input[type="file"],
+input[type="radio"] {
+    flex: 1 1 120px;
+    padding: 6px;
+    background: var(--color-crema);
+    border: 2px solid var(--color-negro);
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra);
+}
+
+@media (max-width: 767px) {
+    div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #lienzo {
+        width: 95%;
+    }
+
+    button,
+    input {
+        width: 100%;
+    }
+}
